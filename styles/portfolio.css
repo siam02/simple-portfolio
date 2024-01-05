@@ -6,7 +6,7 @@
 :root {
     --color-primary: #FD6E0A;
     --bg-primary: #FFF8F3;
-    --text-primary:#757575;
+    --text-primary: #757575;
 }
 
 body {
@@ -138,7 +138,7 @@ nav a {
 
 /* main section */
 
-main{
+main {
     max-width: 1140px;
     margin: 0 auto;
 }
@@ -152,28 +152,60 @@ main{
     margin: 130px 0;
 }
 
-.about-info-container{
+.about-info-container {
     display: flex;
     gap: 20px;
     justify-content: space-around;
 }
 
-.about-info{
+.about-info {
     text-align: center;
     line-height: 30px;
     font-size: 19px;
 }
 
-.about-info h4{
+.about-info h4 {
     color: var(--text-primary);
     font-weight: 400;
 }
 
-.about-info p{
+.about-info p {
     font-weight: 700;
     color: #474747;
 }
 
-#what-i-do-description{
+/* Skills section */
+
+#what-i-do-description {
     padding: 30px 150px;
+}
+
+.skills-container {
+    display: flex;
+    gap: 20px;
+}
+
+.skill {
+    padding: 30px;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+}
+
+.skill img {
+    margin-bottom: 20px;
+}
+
+.skill-title {
+    margin-bottom: 20px;
+    color: #181818;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.skill-description {
+    color: var(--text-primary);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
 }
