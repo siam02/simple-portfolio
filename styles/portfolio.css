@@ -1,20 +1,24 @@
 /* common shared styles */
-*{
+* {
     margin: 0;
 }
-:root{
+
+:root {
     --color-primary: #FD6E0A;
+    --bg-primary: #FFF8F3;
+    --text-primary:#757575;
 }
-body{
+
+body {
     font-family: 'Lato', sans-serif;
     font-family: 'Open Sans', sans-serif;
 }
 
-.text-primary{
+.text-primary {
     color: var(--color-primary);
 }
 
-.btn-primary{
+.btn-primary {
     background-color: var(--color-primary);
     border-radius: 5px;
     border: 0;
@@ -24,7 +28,7 @@ body{
     padding: 15px 35px;
 }
 
-.btn-primary-outline{
+.btn-primary-outline {
     background-color: unset;
     border-radius: 5px;
     border: 1px solid var(--color-primary);
@@ -34,8 +38,23 @@ body{
     padding: 15px 35px;
 }
 
+.section-title {
+    color: #181818;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.section-description {
+    color: var(--text-primary);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
 /* nav styles */
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -43,65 +62,66 @@ nav{
     padding: 30px 0;
 }
 
-.nav-title{
+.nav-title {
     color: #181818;
     font-size: 45px;
     font-weight: 800;
 }
 
-nav > ul{
+nav>ul {
     display: flex;
     align-items: center;
 }
 
-nav li{
+nav li {
     list-style: none;
     margin-right: 50px;
 }
 
-nav a{
+nav a {
     text-decoration: none;
     color: #474747;
 }
 
 /* Header related styles */
 
-.header{
-    background-color: #FFF8F3;
+.header {
+    background-color: var(--bg-primary);
     background-image: url('../images/header_bg.png');
     background-repeat: no-repeat;
     background-position: bottom right;
 }
-.banner{
+
+.banner {
     padding: 30px 30px 0 150px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.banner-content{
+.banner-content {
     max-width: 600px;
 }
 
-.banner .profile-pic{
+.banner .profile-pic {
     width: 500px;
 }
 
-.banner-greeting{
+.banner-greeting {
     font-size: 45px;
     color: #474747;
     margin-bottom: 0;
     font-weight: 600;
 }
 
-.banner-title{
+.banner-title {
     font-size: 70px;
     font-weight: 700;
     margin-top: 5px;
     margin-bottom: 20px;
 }
 
-.banner-description{
+.banner-description {
     color: #757575;
     font-size: 18px;
     font-weight: 400;
@@ -109,7 +129,18 @@ nav a{
     margin-bottom: 20px;
 }
 
-.banner-btn-group{
+.banner-btn-group {
     display: flex;
     gap: 30px;
+}
+
+/* main section */
+
+/* about section */
+
+.about {
+    padding: 130px;
+    background-color: var(--bg-primary);
+    border-radius: 10px;
+    margin: 230px;
 }
