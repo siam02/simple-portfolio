@@ -93,15 +93,26 @@ nav a {
     background-position: bottom right;
 }
 
+.header-column-title{
+    color: rgba(24, 24, 24, 0.15);
+    font-size: 90px;
+    font-weight: 700;
+    letter-spacing: 30px;
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 23rem;
+    left: -19rem;
+}
+
 .banner {
-    padding: 30px 30px 0 150px;
+    padding: 30px 30px 0 230px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
 }
 
 .banner-content {
     max-width: 585px;
+    padding: 185px 0;
 }
 
 .banner .profile-pic {
